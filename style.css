@@ -314,16 +314,25 @@ img {
     .hero-text-group {
         max-width: 100%;
     }
-}
 
-
-.mobile-menu-btn {
+     .mobile-menu-btn {
+        display: block;
         position: absolute;
         top: 50%;
         right: 20px;
         transform: translateY(-50%);
         z-index: 1001;
     }
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
 
 .section {
     padding: 80px 0;
