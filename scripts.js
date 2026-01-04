@@ -5,12 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const icon = mobileBtn.querySelector('i');
     const header = document.getElementById('header');
 
-    const toggleMenu = () => {
-        navMenu.classList.toggle('active');
-        icon.classList.toggle('ph-list');
-        icon.classList.toggle('ph-x');
-    };
-
+   const toggleMenu = () => {
+    navMenu.classList.toggle('active');
+    if (navMenu.classList.contains('active')) {
+        icon.classList.replace('ph-list', 'ph-x');
+    } else {
+        icon.classList.replace('ph-x', 'ph-list');
+    }
+};
     mobileBtn.addEventListener('click', toggleMenu);
 
     navLinks.forEach(link => {

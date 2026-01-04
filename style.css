@@ -76,11 +76,14 @@ img {
 }
 
 @media (max-width: 768px) {
-    .header-container {
-        justify-content: flex-end; /* No celular, volta para a ponta para dar espaço ao menu hambúrguer */
-        padding: 0 20px;
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        padding: 20px 0;
     }
 }
+
 .header-container {
     display: flex;
     justify-content: center; /* Centraliza o menu horizontalmente */
